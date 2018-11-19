@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Tangerine');
+*{
+	margin:0;
+	padding:0;
+}
+body{}
+a{
+	text-decoration:none;
+}
+ul,ol{
+	list-style:none;
+}
+.siderbar_menu{
+	
+}
+.main_menu{
+	position:absolute;
+	top:0;
+	left:0;
+	width:200px;
+	height:100vh;
+	background:#232323;
+	transform-origin:left;
+	transform:perspective(1200px) rotatey(90deg);
+	transition:all .5s;
+}
+.main_menu ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	list-style:none;
+	text-align:center;
+}
+.main_menu ul li{
+	padding:10px;
+}
+.main_menu ul li a{
+	font-size:18px;
+	color:#fff;
+	text-decoration:none;
+	text-transform:uppercase;
+	padding:10px;
+}
+.toggle_btn{
+	position:absolute;
+	left:30px;
+	top:30px;
+	cursor:pointer;
+	transition:left 200ms linear 0ms,transform:300ms ease 100ms;
+	transition:all .5s;
+}
+.toggle_btn span{
+	position:relative;
+	top:0;
+	display:block;
+	background:#1a1a1a;
+	width:30px;
+	height:5px;
+	margin:5px 0px;
+}
+.toggle_btn.active span:nth-child(1){
+	top:10px;
+	transform:rotate(45deg);
+}
+.toggle_btn.active span:nth-child(2){
+	opacity:0;
+}
+.toggle_btn.active span:nth-child(3){
+	top:-10px;
+	transform:rotate(-45deg);
+}
+.toggle_btn.active{
+	left:230px;
+	transform:rotate(360deg);
+}
+.main_menu.active{
+	transform:perspective(1200px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	{}
